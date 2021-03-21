@@ -1,0 +1,246 @@
+/* 메인 페이지 css */
+@charset "UTF-8";
+
+/* 기본 색상 */
+:root {
+	--main-color:#FEC034;
+	--text-color: #555555;
+	--sub-text-color: #999999;
+	
+}
+
+/*이부분*/
+.container div {
+	z-index : 0;
+}
+/* 메인 배너 */
+.mainbanner {
+	margin-top: 100px;
+	margin-bottom: 100px;
+	position: relative;
+}
+
+.item_img {
+	width: 100%;
+	max-height: 800px;
+	opacity: 0.5;
+	border: none;
+	outline: none;
+}
+
+.item_text {
+	position: absolute;
+	padding: 20px;
+	bottom: 10%;
+	margin-left: 1%;
+	/* background-color: rgba(254,192,52,0.8); */
+	color: var(--text-color);
+}
+
+.slick-arrow{
+    display: inline-block;
+    position: relative;
+    top: 220px;
+    z-index: 500;
+    color: #fff;
+    font-size: 20px;
+}
+
+.slick-prev, .slick-next {
+	font-size: 0;
+	position: absolute;
+	bottom: 20px;
+	color: #fff;;
+	border: 0;
+	background: none;
+	z-index: 1;
+	top: 20px;
+	cursor: pointer;
+	outline: none;
+}
+
+.slick-prev {
+    left: 20px;
+}
+ 
+.slick-prev:after {
+    content: "\f104";
+    font: 40px/1 'FontAwesome';
+}
+ 
+.slick-next {
+    right: 20px;
+    text-align: right;
+}
+ 
+.slick-next:after {
+     content: "\f105";
+     font: 40px/1 'FontAwesome';
+}
+ 
+.slick-prev:hover:after,
+.slick-next:hover:after {
+    color: #7e7e7e;
+}
+
+/* 컨텐츠 A */
+.conA .container {
+	padding-top: 60px;
+}
+
+.conA .text h2 {
+	color: var(--text-color);
+	font-size: 40px;
+	text-align: center;
+}
+
+.conA .text h3 {
+	color: var(--sub-text-color);
+	text-align: center;
+}
+
+.conAimglist {
+	display: flex;	
+}
+
+/* 컨텐츠 B */
+.conB .container {
+	padding-top: 60px;
+	padding-bottom:200px;
+}
+.guide_announce {
+	font-size: 30px;
+	text-align: center;
+	color: var(--text-color);
+}
+.guide {
+	padding-top: 60px;
+	display: flex;
+	margin-left: 40px;
+}
+
+#main_dog {
+	width: 100%;
+}
+
+.guide_main {
+	box-sizing: border-box;
+}
+
+.guide_main p {
+	color: var(--sub-text-color);
+	font-size: 18px;
+	padding-top: 10px;
+}
+
+.guide_top_time {
+	float: left;
+	padding-bottom: 50px;
+	padding-left: 100px;
+	width: 30%;
+}
+
+.guide_top_friend {
+	float: right;
+	padding-bottom: 50px;
+	width: 30%;
+}
+
+.guide_bottom_phone {
+	float: left;
+	padding-top: 50px;
+	padding-left: 100px;
+	width: 30%;
+}
+
+.guide_bottom_route {
+	float: right;
+	padding-top: 50px;
+	width: 30%;
+}
+
+/*메인 페이지 꾸미기 한번 시도....*/
+
+.conB .text{
+    text-align:center;
+}
+
+.conB h2{
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 26px;
+}
+
+.conB p{
+    margin-top:0;
+    margin-bottom:20px;
+    font-size:20px;
+    line-height: 1.8; 
+    /* 줄높이: font-size의 1.8라는 뜻이다. */
+    opacity: 0.8;
+}
+
+.conB a{
+    text-decoration: none;
+    color: #5D9ab2;
+    color: var(--main-color);
+}
+
+.conB a:hover{
+    text-decoration: underline;
+}
+
+.conB .icon {
+    font-size: 40px;
+    width: 2em;    /* 폭 글꼴 크기의 2배 */
+    line-height: 2em; /* 높이, 글꼴 크기의 2배 */
+
+    color: #fff;
+    color: var(--main-color);
+    background-color: #ddd;
+    background-color: var(--icon-bk-color);
+
+    border-radius: 50%;  /* 둥글게 만들기 */
+    text-align: center;
+
+    display: inline-block;  /* 아래 margin 적용을 위해 */
+    margin-bottom: 20px;
+}
+
+
+.conB .container{
+    padding-top: 80px;
+    padding-bottom: 20px;
+}
+
+.conB .text{
+	color: var(--sub-text-color);
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+}
+
+.conB h2{
+	color: var(--text-color);
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+
+    .conB .container { /* 그래서, 부모를 flex 로 설정 */
+        display: flex;
+        max-width: 1000px; /*최대 폭 지정*/
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .conB .text {
+        flex: 1;  /* 1 : 1 : 1 비율 설정*/
+    }
+
+
+/* 컨텐츠 C */
+.conC .container{
+    padding-bottom: 140px;
+}
